@@ -1,0 +1,15 @@
+The key fingerprint is:
+SHA256:ltf3DLSjs9bDkRHNKmCvCcR6ayDwZ3yRqQZ2oFZVtiw tangjun_tb@aliyun.com
+The key's randomart image is:
++---[RSA 2048]----+
+|    oo.ooo     o |
+|  .oo .o*.o   . o|
+|  o+ +E+oo o  .o |
+| .  o O.+. .o.o. |
+|     = +So.o..=o |
+|       .o.o  oo= |
+|       .    oo .o|
+|            .o+  |
+|           ..  . |
++----[SHA256]-----+
+
