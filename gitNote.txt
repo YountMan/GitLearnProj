@@ -1,23 +1,23 @@
-1. git ��ʼ�� ʹ�� gitBash ��� ѡȡר�õ��ļ���
-2. �����ļ� git add �ļ���.��׺�� 
-3. �ϴ��������� git commit -m "��ע��Ϣ"
-  ע: �����ļ���������������add �� commit  ֧�� ���ļ���add ֮��ͳһ commit
-4. ��ȡ�����ļ���������ļ� ��Щ���ڲ���  git status
-5. ��ȡĳһ�ļ���������ļ��Ĳ�ͬ git diff
-6. ��ȡgit �ύ����־�ļ� git log �������Ӳ��� ��ʾΪ��Ҫ��Ϣ git log --pretty=oneline
-7. �ָ��汾��:git reset --hard HEAD^ ���� HEAD ����Ҫ��Щ������Ч HEAD^��ʾ��һ���汾,  
-	HEADָ��İ汾���ǵ�ǰ�汾,����һ���汾����HEAD^^��Ȼ����100���汾д100��^�Ƚ���������������
-	����д��HEAD~100
-8. �鿴������ʷ git reflog 
-9. �ָ���Ŀ��汾�� git reset --hard �汾�� ���� �汾�Ų���Ҫдȫ,ֻ��Ҫ��дǰ��λ�Ϳ����ˣ�Git���Զ�ȥ�ң�������д
-10. git ��ÿһ���޸Ķ���Ҫ ��add �� commit ���ܳɹ����浽�汾������ȥ
-11.	git checkout -- �ļ���.��׺�� �������������޸� �����Ƹ����ļ�ֵ���������°棬ǰ����û���ύ��
+1. git 初始化 使用 gitBash 面板 选取专用的文件夹
+2. 添加文件 git add 文件名.后缀名 
+3. 上传到服务器 git commit -m "备注信息"
+  注: 添加文件到服务器都得先add 再 commit  支持 多文件先add 之后统一 commit
+4. 获取本地文件与服务器文件 哪些存在差异  git status
+5. 获取某一文件与服务器文件的不同 git diff
+6. 获取git 提交的日志文件 git log 可以添加参数 显示为简要信息 git log --pretty=oneline
+7. 恢复版本号:git reset --hard HEAD^ 其中 HEAD 必须要大些才能生效 HEAD^表示上一个版本,  
+	HEAD指向的版本就是当前版本,上上一个版本就是HEAD^^当然往上100个版本写100个^比较容易数不过来，
+	所以写成HEAD~100
+8. 查看操作历史 git reflog 
+9. 恢复至目标版本号 git reset --hard 版本号 其中 版本号不需要写全,只需要填写前几位就可以了，Git会自动去找，尽量多写
+10. git 的每一次修改都需要 先add 再 commit 才能成功保存到版本库里面去
+11.	git checkout -- 文件名.后缀名 丢弃工作区的修改 【类似更新文件值服务器最新版，前提是没人提交】
 
-12 git ���ͱ��ذ汾��github.com
-	���ù���һ��Զ�̿� git remote add origin git@github.com:YountMan/learngit.git 
-	��ҳgithub.com��������Ŀ 
-	�����ύ  git push -u origin master   ��һ������master��֧���������ݣ�
-	Զ�̿��ǿյģ����ǵ�һ������master��֧ʱ��������-u������Git������ѱ��ص�master��֧�������͵�Զ���µ�master��֧������ѱ��ص�master��֧��Զ�̵�master��֧�������������Ժ�����ͻ�����ȡʱ�Ϳ��Լ����ֱ��ʹ�� git push origin master ���������޸�;
-13  �ӷ����������Ѵ��ڵ���Ŀ
-		git clone git@github.com:YountMan/��Ŀ��.git
-14  ��֧�Ĵ��� ��
+12 git 推送本地版本到github.com
+	设置关联一个远程库 git remote add origin git@github.com:YountMan/learngit.git 
+	网页github.com创建空项目 
+	本地提交  git push -u origin master   第一次推送master分支的所有内容；
+	远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。直接使用 git push origin master 推送最新修改;
+13  从服务器下载已存在的项目
+		git clone git@github.com:YountMan/项目名.git
+14  分支的创建 到
